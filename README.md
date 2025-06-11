@@ -13,14 +13,14 @@ SMLT_Dataset/
 ├── data/                          # Raw LMP time series (normal + 8 attack cases)
 │   ├── Normal_LMP.csv
 │   ├── case1.csv  ...  case8.csv
-├── analysis/                      # Python scripts for statistical visibility & spreadability
-│   ├── temporal analysis.py       # Implements ∆CV detectability (Section 3.1)
-│   └── spatial analysis.py        # Implements spreadability metric (Section 3.2)
+├── analysis/
+│   ├── temporal analysis.py       # Implements visibility and detectability metrics
+│   └── spatial analysis.py        # Implements spreadability metric
 ├── case study/
-│   └── GEM_case_study.py          # GEM-based online anomaly detection (Section 4)
+│   └── GEM_case_study.py          # GEM-based online anomaly detection
 ├── scripts/
 │   ├── FDIA simulation.m          # MATLAB simulation code to generate attack cases
-│   └── preprocessing.py           # Cleaning pipeline for LMP data
+│   └── preprocessing.py           # Cleaning LMP data
 ```
 
 ---
@@ -42,7 +42,7 @@ Attack cases included:
 
 ---
 
-##  Analysis Scripts
+##  Analysis and Casestudy Scripts
 
 - `temporal analysis.py`: Computes statistical detectability via coefficient of variation drift.
 - `spatial analysis.py`: Calculates spreadability using electrical distances (AUC metric).
