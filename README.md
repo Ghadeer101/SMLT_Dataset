@@ -1,7 +1,7 @@
 
 # SMLT: Stealthy Manipulated LMP Timeseries Dataset
 
-The **SMLT Dataset** provides time-series data and simulation scripts for evaluating detection models with stealthy cyber-physical attacks on electricity markets. It focuses on how different false data injection attacks (FDIAs) can influence **Locational Marginal Prices (LMPs)** in power systems. 
+The **SMLT Dataset** provides time-series data and simulation scripts for evaluating detection models with stealthy cyber-physical attacks on electricity markets. It focuses on how different false data injection attacks (FDIAs) can influence Locational Marginal Prices (LMPs) in power systems. 
 
 ---
 
