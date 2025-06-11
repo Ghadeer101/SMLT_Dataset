@@ -25,7 +25,7 @@ SMLT_Dataset/
 
 ---
 
-## 📦 Dataset Description
+##  Dataset Description
 
 Each case file contains hourly LMP values over 20 weeks across 140 buses. The `Normal_LMP.csv` represents the baseline, while `caseX.csv` files contain specific FDIA scenarios.
 
@@ -42,7 +42,7 @@ Attack cases included:
 
 ---
 
-## 🧪 Analysis Scripts
+##  Analysis Scripts
 
 - `temporal analysis.py`: Computes statistical detectability via coefficient of variation drift.
 - `spatial analysis.py`: Calculates spreadability using electrical distances (AUC metric).
