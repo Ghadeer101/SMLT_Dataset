@@ -1,0 +1,34 @@
+{
+  "name": "Stealthy Manipulated LMP Timeseries (SMLT)",
+  "description": "A synthetic dataset for evaluating stealthy False Data Injection Attacks (FDIA) that manipulate Locational Marginal Prices (LMPs) using the NPCC 140-bus test system.",
+  "version": "1.0",
+  
+  "system_model": {
+    "source": "https://github.com/enliten/ENLITEN-Grid-Econ-Data",
+    "case file": "NPCC.m"
+"load file": "Load_NPCC.csv",
+  },
+  "data_format": "CSV",
+  "time_resolution": "Hourly",
+  "duration": "Approximately 3000 hours",
+  "variables": [
+    "time_index",
+    "attack_flag",
+    "Bus1 ... BusN"
+  ],
+  "attack_cases": [
+    "Case1: Transmission Line Rating (TLR) Attack",
+    "Case2: Critical Parameter Attack",
+    "Case3: Cyber-Topology Attack",
+    "Case4: Ramp-Induced Data (RID) Attack",
+    "Case5: Load-Altering Attack (LAA)",
+    "Case6: Aggregator-Based Strategic Curtailment",
+    "Case7: Composite Attack (e.g., LAA + TLR)",
+    "Case8: Extended Generator Parameter Manipulation"
+  ],
+
+  "reproducibility": {
+    "simulation_script": "scripts/simulate_FDIA.m",
+    "postprocessing_script": "scripts/data_cleaning.py"
+  }
+}
